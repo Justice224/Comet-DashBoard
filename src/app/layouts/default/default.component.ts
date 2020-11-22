@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./default.component.scss']
 })
 export class DefaultComponent implements OnInit {
+  sideBarOpen = true;
 
   constructor() { }
 
-  ngOnInit(): void {
+  // tslint:disable-next-line:typedef
+  ngOnInit(){}
+
+  sideBarToggle($event: any): void{
+    this.sideBarOpen = !this.sideBarOpen;
   }
 
 }
