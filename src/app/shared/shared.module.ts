@@ -11,6 +11,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import {RouterModule} from '@angular/router';
+import { IrregularComponent } from './widgets/irregular/irregular.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 
 
@@ -18,7 +20,8 @@ import {RouterModule} from '@angular/router';
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    IrregularComponent
   ],
   imports: [
     CommonModule,
@@ -29,12 +32,14 @@ import {RouterModule} from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    HighchartsChartModule
   ],
   exports: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    IrregularComponent
   ]
 })
 export class SharedModule { }

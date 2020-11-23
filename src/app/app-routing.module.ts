@@ -9,9 +9,9 @@ const routes: Routes = [{
   path: '',
   component: DefaultComponent,
   children: [{
-    path: '',
-    component: DashboardComponent
-  }, {
+  //   path: '',
+  //   component: DashboardComponent
+  // }, {
     path: 'trades',
     component: TradesComponent
   }]
